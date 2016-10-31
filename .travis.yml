@@ -37,8 +37,8 @@ install:
     - ./install-cmake.sh
 before_script:
  # - export CXX=$COMPILER
-    - unlink /usr/bin/g++
-    - ln -s /usr/bin/g++-6 /usr/bin/g++
+    - sudo unlink /usr/bin/g++
+    - sudo ln -s /usr/bin/g++-6 /usr/bin/g++
     - export CMAKE_EXECUTABLE=`find ${ANDROID_HOME}cmake/*/bin/cmake`
     - mkdir native-build
     - cd native-build
