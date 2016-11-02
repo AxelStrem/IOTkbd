@@ -12,6 +12,7 @@ build:
 install:
   - ps: cat .gitmodules > .gitmodules_old
   - ps: cat .gitmodules_old | %{$_ -replace "git@github.com:","https://github.com/"} > .gitmodules
+  - ps: cat .gitmodules
   - cmd: git submodule update --init --recursive
 
 init:
