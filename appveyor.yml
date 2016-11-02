@@ -1,0 +1,21 @@
+version: 1.0.{build}
+
+skip_tags: true
+
+os:
+  - Visual Studio 2015
+
+build:
+  parallel: true
+  verbosity: minimal
+
+init:
+  - cmd: cmake --version
+
+before_build:
+  - cmd: mkdir build
+  - cmd: cd build
+  - cmd: cmake -DPLATFORM:STRING=pc ../app/
+  - cmd: cd ../
+
+deploy: off
