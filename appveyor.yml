@@ -8,6 +8,9 @@ os:
 build:
   parallel: true
   verbosity: minimal
+  
+install:
+  - cmd: git submodule update --init --recursive
 
 init:
   - cmd: cmake --version
