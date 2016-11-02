@@ -1,3 +1,6 @@
 [submodule "app/src/main/cpp/libmosh"]
 	path = app/src/main/cpp/libmosh
 	url = git@github.com:morj/mosh.git
+[submodule "app/src/main/cpp/libprotobuf"]
+	path = app/src/main/cpp/libprotobuf
+	url = git@github.com:google/protobuf.git
