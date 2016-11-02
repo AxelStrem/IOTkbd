@@ -7,7 +7,7 @@ os:
 
 build:
   parallel: true
-  verbosity: detailed
+  verbosity: minimal
   
 install:
   - cmd: copy .gitmodules .gitmodules_old /y
